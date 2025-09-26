@@ -34,14 +34,16 @@ pipeline{
     }
  post{
      success{
-            mail to: "tiwarimanthan0501@gmail.com",
-             subject: "build successful",
-             body: "your build is successful"
+            mail from: "tiwarimanthan0501@gmail.com",
+            to: "tiwarimanthan0501@gmail.com",
+            subject: "build successful",
+            body: "your build is successful"
      }
      failure{
-            mail to: "tiwarimanthan0501@gmail.com",
-             subject: "build failure",
-             body: "your build is failure"
+            mail from: "tiwarimanthan0501@gmail.com",
+            to: "tiwarimanthan0501@gmail.com",
+            subject: "build failure",
+            body: "your build is failure"
          
      }
  }   
