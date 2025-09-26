@@ -8,7 +8,7 @@ pipeline{
         }
         stage("code build"){
             steps{
-                sh "docker build -t notes-app:latest ."
+                sh "docker buil -t notes-app:latest ."
             }
         }
         stage("push to docker hub"){
