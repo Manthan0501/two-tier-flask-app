@@ -32,4 +32,17 @@ pipeline{
             }
         }
     }
+ post{
+     success{
+            mail to: "tiwarimanthan0501@gmail.com",
+             subject: "build successful",
+             body: "your build is successful"
+     }
+     failure{
+            mail to: "tiwarimanthan0501@gmail.com",
+             subject: "build failure",
+             body: "your build is failure"
+         
+     }
+ }   
 }
